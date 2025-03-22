@@ -3,11 +3,7 @@ import { isAnagram } from "./anagram.js";
 import { occurrences } from "./occurrences.js";
 
 function test(commonScript, testObj) {
-  //testObj structure {script: <string containg script text>, expected: <any type>}
-  //returns resultObj with structure {script: <string containg script text>,
-  //  expectedJSON: <JSON string containing expected result>,
-  //  actualJSON: <JSON string containing actual result>, result: <string containing either 'passed'
-  //  or 'failed'}
+ 
   const expectedJSON = JSON.stringify(testObj.expected);
   let evalRes;
   try {
@@ -34,12 +30,7 @@ export function testframework(
   scripts,
   expectedResults
 ) {
-  //input
-  //scripts - array of tested scripts
-  //expectedResults - array of appropriate results
-  //scrpits[i] and expectedResults[i] should be consistent
-  /**************************************************************** */
-  //output
+  
   const bodyElem = document.querySelector("body");
   const resultObjects = getResultObjects(
     commonScript,

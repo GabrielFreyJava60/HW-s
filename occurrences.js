@@ -1,7 +1,6 @@
 export function occurrences(strings) {
-  //takes array of repeated strings
-  //returns array of sorted strings with information about how many times the original string occurs in original array
-  const resObj = {}; //key string from strings array, value - counter of occurrences
+ 
+  const resObj = {}; 
   fillObj(strings, resObj);
   const resArray = getResArray(resObj);
   resArray.sort();
@@ -24,4 +23,4 @@ function getResArray(resObj) {
   return res;
 }
 
-console.log(occurrences(["a", "b", "a", "c", "b", "a", "d"])); //["a=>3", "b=>2", "c=>1", "d=>1"]
+console.log(occurrences(["a", "b", "a", "c", "b", "a", "d"]));
